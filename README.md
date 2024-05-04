@@ -1,6 +1,7 @@
 # Project Scope
 ## Icon
 <img src="ic_launcher.png" alt="Icon" width="100"/>
+
 ## Introduction
 In the past decade, the internet has become a vast source of information on various topics worldwide, including Palestine. However, the Palestinian case is unique due to the presence of websites and blogs that often distort facts about the Palestinian issue. This misinformation has led to confusion regarding historical events and places in Palestine. Moreover, many people spend a significant amount of time commuting daily, often engaging in unproductive activities such as browsing social media or messaging. Recognizing this opportunity, we propose an application aimed at making daily commutes more productive by providing users with educational content about Palestinian history, culture, and landmarks.
 
