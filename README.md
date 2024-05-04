@@ -17,6 +17,11 @@ Our project focuses on developing a community-based mapping and navigation appli
 - **Multilingual Support**: The application supports both English and Arabic languages to cater to local and international users.
 - **Integration with Google Maps**: Utilizes Google Maps API for navigation and location-based services.
 
+  
+## Graphic Prototype
+![Prototype](1.jpg)
+
+
 ## Data Sources
 - **بلادنا فلسطين (مصطفى مراد الدباغ)**: A source of information on Palestinian history and culture.
 - **Palestine Remembered**: Provides historical information and documentation related to Palestine.
