@@ -1,5 +1,5 @@
 # Project Scope
-## Icon
+
 <img src="ic_launcher.png" alt="Icon" width="100"/>
 
 ## Introduction
