@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" />
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <!--
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_sheet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_arrow_upward"
+                android:tint="@android:color/white"
+                app:fabSize="normal"
+                app:layout_anchor="@id/bottom_sheet"
+                app:layout_anchorGravity="right|end"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:contentDescription="swipe up" />
+                -->
+
+        <include layout="@layout/sheet" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <LinearLayout
+                android:id="@+id/bottom_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+
+                <ImageButton
+                    android:id="@+id/person_id"
+                    android:layout_width="0dip"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:longClickable="false"
+                    android:src="@drawable/ic_baseline_person_24"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <ImageButton
+                    android:id="@+id/directions_id"
+                    android:layout_width="0dip"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_directions_24"
+                    android:text="Button 1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/ic_gps"
+        android:src="@drawable/ic_gps"
+        />
+</RelativeLayout>

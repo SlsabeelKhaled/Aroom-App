@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="250dp"
+    android:background="@drawable/bottom_sheet_background"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+    <LinearLayout
+        android:layout_width="74dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/search_"
+        android:orientation="vertical"
+        android:padding="16dp" />
+
+    <!--<LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+
+        >
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <fragment
+
+                android:layout_alignParentTop="true"
+                android:background="@drawable/rounded_corner_view"
+                android:iconifiedByDefault="false"
+                android:queryHint="ابحث هنا "
+
+                android:id="@+id/autocomplete_fragment"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                 />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:elevation="10dp"
+        android:background="#fff"
+        android:id="@+id/relLayout1">
+
+        <ImageView
+            android:id="@+id/ic_magnify"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_magnify"
+            />
+
+        <EditText
+            android:id="@+id/input_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/ic_magnify"
+            android:background="@drawable/white_border"
+            android:hint="Enter address, city or zip code"
+            android:imeOptions="actionSearch"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <!--        <fragment android:id="@+id/autocomplete_fragment"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_below="@id/input_search"-->
+        <!--            android:layout_marginTop="10dp"-->
+        <!--            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"-->
+        <!--            />-->
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="#FFFFFF">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/background_primary">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="قصص"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:src="@drawable/script"
+                android:background="@color/background_primary"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@color/background_primary">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="معالم"
+                android:textColor="@color/colorPrimaryDark" />
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:src="@drawable/mosque"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شخصيات"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:src="@drawable/people" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="96dp"
+            android:layout_height="4dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="احداث"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="61dp"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:src="@drawable/event" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="الأخيرة"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="136dp"
+                    android:layout_height="31dp"
+                    android:minHeight="48dp"
+                    android:src="@drawable/cancel"
+                    android:translationX="-10dp"
+                    android:translationY="7dp"
+                    android:background="@color/background_primary"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="152dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:text="ررررر" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="13dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:translationX="-10dp"
+                    android:translationY="7dp"
+                    app:srcCompat="@drawable/cancel" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="152dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:text="ككككككككككك" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="المفضلة"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="136dp"
+                    android:layout_height="31dp"
+                    android:background="@color/background_primary"
+                    android:minHeight="48dp"
+                    android:src="@drawable/cancel"
+                    android:translationX="-10dp"
+                    android:translationY="7dp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="152dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:text="ررررر" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="13dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:translationX="-10dp"
+                    android:translationY="7dp"
+                    app:srcCompat="@drawable/cancel" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="152dp"
+                    android:layout_height="33dp"
+                    android:layout_weight="1"
+                    android:text="ككككككككككك" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
